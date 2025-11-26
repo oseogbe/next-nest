@@ -74,7 +74,7 @@ appointment-booking/
    ```
 
 3. Access the application:
-   - Frontend: http://localhost:3000
+   - Frontend: http://localhost:3003
    - Backend API: http://localhost:3001
 
 ### Running Locally (Development)
