@@ -49,10 +49,12 @@ services:
       context: ./client
       dockerfile: Dockerfile
       target: runner
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
     container_name: appointment-client
     restart: unless-stopped
     ports:
-      - '127.0.0.1:3000:3000'  # Only accessible from localhost (via Nginx)
+      - '127.0.0.1:3003:3000'  # Only accessible from localhost (via Nginx)
     environment:
       NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
     depends_on:
