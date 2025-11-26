@@ -136,6 +136,18 @@ appointment-booking/
 - `GET /users` - Get all users
 - `POST /users` - Create a new admin user
 
+## Frontend Routes
+
+### Public Routes
+
+- `/` - Home page with appointment booking form
+
+### Admin Routes (Protected - Require Authentication)
+
+- `/admin/login` - Admin login page
+- `/admin/dashboard` - Admin dashboard to view all appointments
+- `/admin/users` - User management page to create and manage admin users
+
 ## Database Schema
 
 ### User
